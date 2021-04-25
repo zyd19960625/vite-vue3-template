@@ -2,7 +2,7 @@
   <div>
     <h1>{{ msg }}</h1>
     1
-    <h2>z'y'd</h2>
+    <h2>z'y'd good</h2>
   </div>
 </template>
 
