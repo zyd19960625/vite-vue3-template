@@ -20,3 +20,11 @@ export default defineComponent({
   }
 })
 </script>
+
+<style scoped lang="stylus">
+button {
+  cursor pointer
+  font-size 20px
+  padding 5px
+}
+</style>

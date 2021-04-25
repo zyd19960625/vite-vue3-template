@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
-import styleImport from 'vite-plugin-style-import'
 import vue from '@vitejs/plugin-vue'
+import styleImport from 'vite-plugin-style-import'
 // 如果编辑器提示 path 模块找不到，则可以安装一下 @types/node -> npm i @types/node -D
 import { resolve } from 'path'
 
@@ -8,7 +8,7 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [
     vue(),
-    // 按需载入Element Plus
+    // 按需载入 Element Plus
     styleImport({
       libs: [
         {
@@ -16,7 +16,7 @@ export default defineConfig({
           esModule: true,
           ensureStyleFile: true,
           resolveStyle: (name) => {
-            return `element-plus/lib/tmeme-chalk/${name}.css`
+            return `element-plus/lib/theme-chalk/${name}.css`
           },
           resolveComponent: (name) => {
             return `element-plus/lib/${name}`
@@ -32,7 +32,7 @@ export default defineConfig({
   },
   base: './', // 设置打包路径
   server: {
-    port: 8084, // 设置服务启动端口号
+    port: 4500, // 设置服务启动端口号
     open: true, // 设置服务启动时是否自动打开浏览器
     cors: true // 允许跨域
 
